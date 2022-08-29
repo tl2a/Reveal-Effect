@@ -1,0 +1,72 @@
+html,
+body,
+div,
+svg,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.letter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
+
+.letter-mid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-mix-blend-mode: darken;
+  mix-blend-mode: darken;
+  overflow: hidden;
+}
+
+.letter-mid .black {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+    background-color: black;
+
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.letter-mid .image-reveal {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.letter-mid .image {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-mix-blend-mode: lighten;
+  mix-blend-mode: lighten;
+  overflow: hidden;
+}
+
+.letter-mid .image img, .letter-mid .image-reveal img {
+    width: 100%;
+    height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
